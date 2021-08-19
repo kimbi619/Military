@@ -1,38 +1,330 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'montserrat light';
+}
+
+.fixedTop {
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 4px 0px #22232444;
+          box-shadow: 0px 3px 4px 0px #22232444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0em 2em;
+  height: 3.5em;
+}
+
+.fixedTop .pageTitle {
+  font-family: 'montserrat';
+  font-size: 1.1rem;
+}
+
+.fixedTop .burger {
+  width: 2.6em;
+  height: 3.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.fixedTop .menu {
+  width: 90%;
+  height: 1px;
+  background-color: #021a31;
+  position: relative;
+  pointer-events: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.fixedTop .menu::before, .fixedTop .menu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #021a31;
+  border-radius: 12px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.fixedTop .menu::before {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.fixedTop .menu::after {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.fixedTop .user {
+  width: 1.6em;
+  cursor: pointer;
+}
+
+.fixedTop .search {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  right: 0;
+}
+
+.fixedTop .showNav .menu {
+  width: 80%;
+}
+
+.fixedTop .showNav .menu::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.fixedTop .showNav .menu::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.fixedTop .inputwrapper {
+  width: 0px;
+  height: 2em;
+  background: #def2ff70;
+  border-radius: 20px;
+  position: relative;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.fixedTop form input {
+  margin: 0;
+  padding: 0 1em;
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: darkgray;
+  font-family: 'montserrat light';
+  font-style: italic;
+}
+
+.fixedTop .showSearchBar {
+  width: 15em;
+}
+
+@media (max-width: 700px) {
+  .fixedTop .pageTitle {
+    font-size: .9rem;
+  }
+  .fixedTop .burger {
+    width: 2.5em;
+    height: 2.8 em;
+  }
+  .fixedTop .user, .fixedTop .search {
+    width: 1.3em;
+  }
+  .fixedTop .menu::before {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+  .fixedTop .menu::after {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  .fixedTop .inputwrapper {
+    height: 1.8em;
+  }
+  .fixedTop .showSearchBar {
+    width: 12em;
+  }
+}
+
+.fixedTop .seaching {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: white;
+  font-style: italic;
+  font-size: .8em;
+  color: gray;
+  padding: 3em .4em 2em;
+  z-index: -1;
+}
+
+@media (max-width: 630px) {
+  .fixedTop .pageTitle {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .fixedTop .pageTitle {
+    display: none;
+  }
+  .fixedTop .inputwrapper {
+    margin: 0px 2em 0em auto;
+  }
+  .fixedTop .user {
+    width: 1.5em;
+  }
+}
+
+.nav {
+  height: calc( 100vh - 3.5em);
+  position: fixed;
+  top: 3.5em;
+  background: white;
+  left: 0;
+  -webkit-box-shadow: 3px 2px 4px 0px rgba(21, 57, 105, 0.267);
+          box-shadow: 3px 2px 4px 0px rgba(21, 57, 105, 0.267);
+  z-index: 2;
+  width: 400px;
+  max-width: 100%;
+  padding: 2.3em;
+  margin: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.nav li {
+  list-style: none;
+  padding: 0 0 .7em 1em;
+  margin-bottom: .7em;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.nav li:first-of-type {
+  border-bottom: 1.4px solid #021a3159;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  color: #021a31;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.nav li:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.toggleOpen {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.main * {
+  z-index: -2;
+}
+
+.landingWrapper {
+  height: calc(100vh - 3.5em);
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#021a3180), to(#021a3180)), url("./img/landing.jpg");
+  background: linear-gradient(to right, #021a3180, #021a3180), url("./img/landing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landingWrapper h1 {
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landingWrapper p {
+  padding: 2em 2em;
+  font-size: clamp(1rem, 2.2vw, 1.4rem);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.landingWrapper button {
+  outline: none;
+  border: none;
+  background: #0d3d85;
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  padding: .8em 1.8em;
+  border-radius: 3rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.desc1, .desc2 {
+  background: url("./img/pixabay.jpg") no-repeat center;
+  background-size: cover;
+  color: white;
+  min-height: 40vh;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.desc1 .text, .desc2 .text {
+  width: 70%;
+  height: 100%;
+  background: #021a3181;
+  text-align: center;
+  padding: 4em;
 }
+
+.desc1 h1, .desc2 h1 {
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  padding: 0em 0em 1em;
+}
+
+.desc2 {
+  background: url("./img/pixabaySecond.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.desc2 .text {
+  float: right;
+}
+/*# sourceMappingURL=App.css.map */
