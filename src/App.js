@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Nav from './components/Nav';
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <Home />
 
       </div>
+      <Footer />
       {/* <img src={landing} className="" alt="landing img" /> */}
     </div>
   );
