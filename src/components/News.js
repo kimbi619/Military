@@ -10,7 +10,12 @@ const News = () => {
                 <h1>Alcatraz attack on the US Navy was a success</h1>
                 <button id="readmore">Read More</button>
             </div>
-            <LattestNewsTop />
+            <div className="wrapper">
+                <LattestNewsTop />
+                <LattestNewsTop />
+                <LattestNewsTop />
+                <LattestNewsTop />
+            </div>
         </div>
     )
 }
