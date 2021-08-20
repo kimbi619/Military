@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/military/static/css/main.f9408afa.chunk.css",
-    "main.js": "/military/static/js/main.8ef0931b.chunk.js",
-    "main.js.map": "/military/static/js/main.8ef0931b.chunk.js.map",
+    "main.css": "/military/static/css/main.db6a4963.chunk.css",
+    "main.js": "/military/static/js/main.4b86ad72.chunk.js",
+    "main.js.map": "/military/static/js/main.4b86ad72.chunk.js.map",
     "runtime-main.js": "/military/static/js/runtime-main.30fb06eb.js",
     "runtime-main.js.map": "/military/static/js/runtime-main.30fb06eb.js.map",
     "static/js/2.33ed9dd5.chunk.js": "/military/static/js/2.33ed9dd5.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.264c964f.chunk.js": "/military/static/js/3.264c964f.chunk.js",
     "static/js/3.264c964f.chunk.js.map": "/military/static/js/3.264c964f.chunk.js.map",
     "index.html": "/military/index.html",
-    "static/css/main.f9408afa.chunk.css.map": "/military/static/css/main.f9408afa.chunk.css.map",
+    "static/css/main.db6a4963.chunk.css.map": "/military/static/css/main.db6a4963.chunk.css.map",
     "static/js/2.33ed9dd5.chunk.js.LICENSE.txt": "/military/static/js/2.33ed9dd5.chunk.js.LICENSE.txt",
     "static/media/App.css": "/military/static/media/pixabaySecond.0ac472d0.jpg",
     "static/media/search.65a7fd14.svg": "/military/static/media/search.65a7fd14.svg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.30fb06eb.js",
     "static/js/2.33ed9dd5.chunk.js",
-    "static/css/main.f9408afa.chunk.css",
-    "static/js/main.8ef0931b.chunk.js"
+    "static/css/main.db6a4963.chunk.css",
+    "static/js/main.4b86ad72.chunk.js"
   ]
 }
