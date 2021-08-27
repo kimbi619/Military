@@ -1,26 +1,31 @@
 {
   "files": {
-    "main.css": "/military/static/css/main.db6a4963.chunk.css",
-    "main.js": "/military/static/js/main.4b86ad72.chunk.js",
-    "main.js.map": "/military/static/js/main.4b86ad72.chunk.js.map",
-    "runtime-main.js": "/military/static/js/runtime-main.30fb06eb.js",
-    "runtime-main.js.map": "/military/static/js/runtime-main.30fb06eb.js.map",
+    "main.css": "/military/static/css/main.3b7795a1.chunk.css",
+    "main.js": "/military/static/js/main.253c2580.chunk.js",
+    "main.js.map": "/military/static/js/main.253c2580.chunk.js.map",
+    "runtime-main.js": "/military/static/js/runtime-main.01d1c6a4.js",
+    "runtime-main.js.map": "/military/static/js/runtime-main.01d1c6a4.js.map",
     "static/js/2.33ed9dd5.chunk.js": "/military/static/js/2.33ed9dd5.chunk.js",
     "static/js/2.33ed9dd5.chunk.js.map": "/military/static/js/2.33ed9dd5.chunk.js.map",
-    "static/js/3.264c964f.chunk.js": "/military/static/js/3.264c964f.chunk.js",
-    "static/js/3.264c964f.chunk.js.map": "/military/static/js/3.264c964f.chunk.js.map",
+    "static/js/3.5415a206.chunk.js": "/military/static/js/3.5415a206.chunk.js",
+    "static/js/3.5415a206.chunk.js.map": "/military/static/js/3.5415a206.chunk.js.map",
     "index.html": "/military/index.html",
-    "static/css/main.db6a4963.chunk.css.map": "/military/static/css/main.db6a4963.chunk.css.map",
+    "static/css/main.3b7795a1.chunk.css.map": "/military/static/css/main.3b7795a1.chunk.css.map",
     "static/js/2.33ed9dd5.chunk.js.LICENSE.txt": "/military/static/js/2.33ed9dd5.chunk.js.LICENSE.txt",
+    "static/media/bike.c29cc59d.jpg": "/military/static/media/bike.c29cc59d.jpg",
+    "static/media/drone.5f98a70b.jpg": "/military/static/media/drone.5f98a70b.jpg",
+    "static/media/girlTestimonial.4db20e72.jpg": "/military/static/media/girlTestimonial.4db20e72.jpg",
     "static/media/App.css": "/military/static/media/pixabaySecond.0ac472d0.jpg",
     "static/media/search.65a7fd14.svg": "/military/static/media/search.65a7fd14.svg",
+    "static/media/ship.94450ea3.jpg": "/military/static/media/ship.94450ea3.jpg",
     "static/media/specna.e49d4049.jpg": "/military/static/media/specna.e49d4049.jpg",
+    "static/media/specna_grid.e49d4049.jpg": "/military/static/media/specna_grid.e49d4049.jpg",
     "static/media/user.cb0162dc.svg": "/military/static/media/user.cb0162dc.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.30fb06eb.js",
+    "static/js/runtime-main.01d1c6a4.js",
     "static/js/2.33ed9dd5.chunk.js",
-    "static/css/main.db6a4963.chunk.css",
-    "static/js/main.4b86ad72.chunk.js"
+    "static/css/main.3b7795a1.chunk.css",
+    "static/js/main.253c2580.chunk.js"
   ]
 }
