@@ -1,0 +1,96 @@
+
+.story{
+    background-color: #f3f3f3;
+    display: block;
+    margin: 20px 0px;
+}
+.imgWrapper{
+    height: 20em;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+}
+
+.desc{
+    text-align: center;
+    z-index: 23;
+    grid-column: 5/-1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.story h2{
+    margin: 1.1em 0;
+}
+.desc p{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+.story  .imgWrapper img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+}
+
+.galleryLast{
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr );
+    grid-gap: .5em;
+}
+.galleryLast .galleryItem{
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    height: 12em;
+    border-radius: 1em;
+}
+.galleryLast .imgWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 100%; 
+}
+.galleryLast img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.galleryLast .desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #f3f3f35d 40%, #9b9a9a);
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-weight: 900;
+    color: white;
+}
+.galleryLast p{
+    margin: auto 1em 1em;
+    width: 70%;
+    font-size: clamp(.8rem, 3vw, 1.1rem);
+}
+
+
+@media(min-width: 840px){
+    .story{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 20px 0px;
+    }
+    .imgWrapper{
+        grid-column: 1/5;
+        height: 20em;
+        z-index: 23;
+        overflow: hidden;
+    }
+}

@@ -28,7 +28,7 @@ const Nav = () => {
     }
 
     return (
-        <div>
+        <nav>
             <div className="fixedTop">
                 <div onClick={showNav}  className={`burger ${openNav ? "showNav" : ""}`}>
                     <div className="menu"></div>
@@ -52,7 +52,7 @@ const Nav = () => {
                     <li><a href="#chat">Chat with us</a></li>
                 </ul>
             </div>
-        </div>
+        </nav>
     ) 
 }
 
